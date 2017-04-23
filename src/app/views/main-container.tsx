@@ -5,6 +5,6 @@ export interface MainProps { to: string }
 
 export class Main extends React.Component<MainProps, undefined> {
   render() {
-    return <h1 className="main">Hello, {this.props.to}!?</h1>;
+    return <h1 className="main">Hello, {this.props.to}!</h1>;
   }
 }

@@ -9,7 +9,13 @@ describe('Main Container', () => {
     wrapper.find('h1').length.should.equal(1);
   });
 
-  it('should accept a "to" prop', () => {
-    true.should.equal(true);
+  it('should render a "to" prop', () => {
+    const wrapper = shallow(<Main to='cam'/>);
+    wrapper.text().should.equal('Hello, cam!');
+  });
+
+  it('should have class .main', () => {
+    const wrapper = shallow(<Main to='cam'/>);
+    wrapper.hasClass('main').should.be.true;
   });
 });
