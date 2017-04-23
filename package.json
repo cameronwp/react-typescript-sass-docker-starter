@@ -1,0 +1,41 @@
+{
+  "name": "marvin-admin",
+  "version": "0.0.1",
+  "description": "Writing boilerplate sucks. Use this instead.",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "build": "./node_modules/gulp/bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronwp/react-typescript-sass-docker-starter.git"
+  },
+  "author": "Cameron Pittman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cameronwp/react-typescript-sass-docker-starter/issues"
+  },
+  "homepage": "https://github.com/cameronwp/react-typescript-sass-docker-starter#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "awesome-typescript-loader": "^3.1.2",
+    "css-loader": "^0.28.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-webpack": "^1.5.0",
+    "gulp-webserver": "^0.9.1",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.16.1",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.1",
+    "webpack": "^2.4.1"
+  }
+}

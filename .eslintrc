@@ -1,0 +1,66 @@
+{
+    "rules": {
+        "indent": [
+            2,
+            2,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            2,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "array-bracket-spacing": ["warn", "never"],
+        "array-callback-return": [2],
+        "arrow-parens": ["warn", "as-needed"],
+        "arrow-spacing": ["warn"],
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "camelcase": "error",
+        "comma-style": ["error"],
+        "dot-notation": ["error"],
+        "eol-last": ["warn"],
+        "eqeqeq": ["error", "smart"],
+        "keyword-spacing": ["error"],
+        "new-cap": ["error"],
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+        "no-case-declarations": ["error"],
+        "no-confusing-arrow": ["error"],
+        "no-console": [0],
+        "no-const-assign": 2,
+        "no-fallthrough": ["error"],
+        "no-loop-func": ["error"],
+        "no-nested-ternary": ["error"],
+        "no-param-reassign": ["error", { "props": true }],
+        "no-unneeded-ternary": ["error"],
+        "no-unused-vars": 2,
+        "no-useless-escape": ["warn"],
+        "no-whitespace-before-property": ["error"],
+        "one-var": ["warn", "never"],
+        "padded-blocks": ["error", "never"],
+        "prefer-arrow-callback": ["warn", { "allowNamedFunctions": true }],
+        "prefer-const": [2],
+        "prefer-template": ["warn"],
+        "prefer-rest-params": ["warn"],
+        "space-before-blocks": ["error", "always"],
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": ["error", {"int32Hint": false}],
+        "strict": ["warn", "global"],
+        "wrap-iife": ["error", "outside"]
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": "eslint:recommended"
+}
