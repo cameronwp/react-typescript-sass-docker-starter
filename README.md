@@ -6,10 +6,11 @@ Because it took me wayyyy too long to figure out how to load Sass with Webpack.
 
 ## What's Included
 
-* Gulp / Webpack combo for compiling a SPA.
+* Gulp / Webpack 2 combo for compiling a SPA.
 * A "Hello, world!" demoing the React / Sass combo.
 * A little dev server that watches source files and reloads on changes.
 * Easy script for building a docker container serving the app (built from `nginx:alpine`).
+* eslint rules because I'm anal retentive.
 
 ## What's Not Included
 
@@ -48,6 +49,8 @@ gulp serve
 ./scripts/build.sh
 ```
 
+Note that the image will automatically get tagged as `IMAGE_NAME:latest` and `IMAGE_NAME:VERSION` where `VERSION` is the version specified in package.json.
+
 ### Running the Docker Image
 
 ```sh
@@ -56,5 +59,7 @@ docker run -it IMAGE_NAME
 
 ## Tips
 
-* Try [VS Code](https://code.visualstudio.com/Download)! [VS Code + TS = ❤](https://code.visualstudio.com/docs/languages/typescript). VS Code will automatically pick up your TS typings and provide useful intellisense suggestions as you work.
+* Try [VS Code](https://code.visualstudio.com/Download)! [VS Code + TS = ❤](https://code.visualstudio.com/docs/languages/typescript). VS Code will automatically pick up your TS typings and provide useful intellisense suggestions as you work. It's also super easy to get [eslint up and running](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 * The docker image isn't really meant for dev work. I'd avoid using it for anything but hosting your app.
+
+PRs will be happily reviewed! Feedback is definitely a good thing.
