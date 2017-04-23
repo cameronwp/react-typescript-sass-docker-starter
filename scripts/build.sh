@@ -14,7 +14,8 @@ echo --------- Building site SPA
 gulp > /dev/null
 
 # build
-echo --------- Building image heartofgold/marvin-admin
-docker build . -t heartofgold/marvin-admin:latest -t heartofgold/marvin-admin:$PACKAGE_VERSION
+# Change `IMAGE_NAME` to whatever you want to call your image.
+echo --------- Building image with IMAGE_NAME
+docker build . -t IMAGE_NAME:latest -t IMAGE_NAME:$PACKAGE_VERSION
 
 echo --------- Done!

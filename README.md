@@ -9,6 +9,7 @@ Because it took me wayyyy too long to figure out how to load Sass with Webpack.
 * Gulp / Webpack 2 combo for compiling a SPA.
 * A "Hello, world!" demoing the React / Sass combo.
 * A little dev server that watches source files and reloads on changes.
+* Test setup with karma and [Enzyme](https://github.com/airbnb/enzyme).
 * Easy script for building a docker container serving the app (built from `nginx:alpine`).
 * eslint rules because I'm anal retentive.
 
@@ -16,16 +17,16 @@ Because it took me wayyyy too long to figure out how to load Sass with Webpack.
 
 * Production performance best practices - your React components and CSS get compiled into a monolithic ES5 bundle.
 * HTTPS... or any kind of server logic. Both the dev server and docker image server are dumb.
-* Any kind of tests. That's a big TODO.
-* Client-side routing. That's also a TODO.
+* Client-side routing. That's a TODO.
 
 ## Installation
 
 1. Fork this repo.
+2. `chmod +x scripts/postinstall.js`
 2. Install node modules: `npm i`
 3. [Install docker](https://docs.docker.com/engine/installation/) (if you haven't already).
 4. Make the build script executable: `chmod +x ./scripts/build.sh`
-5. If you start building docker images, you'll probably want to give your image in scripts/build.sh.
+5. If you start building docker images, you'll probably want to give your image a name in scripts/build.sh.
 
 ## Usage
 
@@ -41,6 +42,18 @@ Run the dev server (should automatically open a browser tab to your app and relo
 
 ```sh
 gulp serve
+```
+
+Test your components once.
+
+```sh
+npm t
+```
+
+Watch files and continuously test in Chrome.
+
+```sh
+npm run test:watch
 ```
 
 ### Building the Docker Image
@@ -62,4 +75,6 @@ docker run -it IMAGE_NAME
 * Try [VS Code](https://code.visualstudio.com/Download)! [VS Code + TS = ❤](https://code.visualstudio.com/docs/languages/typescript). VS Code will automatically pick up your TS typings and provide useful intellisense suggestions as you work. It's also super easy to get [eslint up and running](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 * The docker image isn't really meant for dev work. I'd avoid using it for anything but hosting your app.
 
-PRs will be happily reviewed! Feedback is definitely a good thing.
+---
+
+PRs will be happily reviewed!
