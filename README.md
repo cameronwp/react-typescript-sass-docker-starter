@@ -8,15 +8,15 @@ Because it took me wayyyy too long to figure out how to load Sass with Webpack.
 
 * Gulp / Webpack 2 combo for compiling a SPA.
 * A "Hello, world!" demoing the React / Sass combo.
-* A little dev server that watches source files and reloads on changes.
 * Test setup with karma and [Enzyme](https://github.com/airbnb/enzyme).
+* A little dev server that watches source files and reloads on changes.
 * Easy script for building a docker container serving the app (built from `nginx:alpine`).
-* eslint rules because I'm anal retentive.
 
 ## What's Not Included
 
 * Production performance best practices - your React components and CSS get compiled into a monolithic ES5 bundle.
 * HTTPS... or any kind of server logic. Both the dev server and docker image server are dumb.
+* Redux, GraphQL, anything database related.
 * Client-side routing. That's a TODO.
 
 ## Installation
