@@ -1,6 +1,6 @@
 # React / TypeScript / Sass / Docker Starter
 
-Because it took me wayyyy too long to figure out how to load Sass with Webpack.
+Because writing Webpack configs is like performing black magic incantations.
 
 ---
 
@@ -22,7 +22,6 @@ Because it took me wayyyy too long to figure out how to load Sass with Webpack.
 ## Installation
 
 1. Fork this repo.
-2. `chmod +x scripts/postinstall.js`
 2. Install node modules: `npm i`
 3. [Install docker](https://docs.docker.com/engine/installation/) (if you haven't already).
 4. Make the build script executable: `chmod +x ./scripts/build.sh`
